@@ -533,8 +533,15 @@
             * @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
             */
             .columnImage{
-                height:auto !important;
-                /*@editable*/ max-width:480px !important;
+                /* height:auto !important; */
+                /*@editable*/ /* max-width:480px !important;*/
+                min-width:280px !important;
+                max-width: 280px;
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                padding-bottom: 10px !important;
+                text-align:center !important;
                 /*@editable*/ /*width:100% !important;*/
             }
 
@@ -544,11 +551,14 @@
             * @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
             */
             .leftColumnContent{
-                /*@editable*/ font-size:16px !important;
-                /*@editable*/ line-height:125% !important;
-                padding:0 0 10px 0;
-                text-align:center !important;
 
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                padding-bottom: 10px !important;
+
+                padding:0 0 10px 0 !important;
+                text-align:center !important;
             }
 
             /**
@@ -557,9 +567,13 @@
             * @tip Make the center column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
             */
             .centerColumnContent{
-                /*@editable*/ font-size:16px !important;
-                /*@editable*/ line-height:125% !important;
-                padding:0 0 10px 0;
+
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                padding-bottom: 10px !important;
+
+                padding:0 0 10px 0 !important;
                 text-align:center !important;
             }
 
@@ -569,10 +583,15 @@
             * @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
             */
             .rightColumnContent{
-                /*@editable*/ font-size:16px !important;
-                /*@editable*/ line-height:125% !important;
-                padding:0 0 10px 0;
+
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                padding-bottom: 10px !important;
+
+                padding:0 0 10px 0 !important;
                 text-align:center !important;
+
             }
 
             /* ======== Footer Styles ======== */
@@ -611,7 +630,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                 <tr>
                                     <td valign="top" class="headerContent">
-                                        <img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/sb_header8_0.png" style="max-width:600px;background-color:#e6e6e6;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                        <img src="img/sb_header8_0.png" style="max-width:600px;background-color:#e6e6e6;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                     </td>
                                 </tr>
                             </table>
@@ -631,7 +650,7 @@
                                         <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                             <tr>
                                                 <td class="leftColumnContent"><a href="http://www.scyldbowring.com/#/hp-helion/">
-                                                    <img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/gif3/EL%20300x186.gif" style="max-width:200px;min-width: 200px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" /></a>
+                                                    <img src="img/EL300x186.gif" style="max-width:200px;min-width: 200px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" /></a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -643,7 +662,7 @@
                                         <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                             <tr>
                                                 <td class="centerColumnContent">
-                                                    <a href="http://www.scyldbowring.com/#/teletech/"><img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/gif3/EL%20300x186.gif" style="max-width:200px;min-width: 200px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" /></a>
+                                                    <a href="http://www.scyldbowring.com/#/teletech/"><img src="img/EL300x186.gif" style="max-width:200px;min-width: 200px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" /></a>
                                                 </td>
                                             </tr>
 
@@ -653,7 +672,7 @@
                                         <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                             <tr>
                                                 <td class="rightColumnContent">
-                                                    <a href="http://www.scyldbowring.com/#/anheuser-busch/"><img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/gif3/EL%20300x186.gif" style="max-width:200px;min-width: 200px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" /></a>
+                                                    <a href="http://www.scyldbowring.com/#/anheuser-busch/"><img src="img/EL300x186.gif" style="max-width:200px;min-width: 200px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" /></a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -672,11 +691,11 @@
                                         <h3>Creating a good-looking email is simple</h3> -->
 
 
-                                        Hi [firstname,fallback=],<br />All identities need to have a life beyond paper. <br /> Here’s some recent examples I’ve produced that show what sound and motion can bring to a brand:<br />
+                                        Hi [firstname,fallback=],<br /><br/>It's been a very busy last few months and I wanted to share some of my latest branding motion work with you.<br />
                                         <br />
-                                        More logo work for <a href="http://www.scyldbowring.com/#/hp-helion/" style="color: #231f20; text-decoration:none;">HP,</a> animated soundwaves for <a href="http://www.scyldbowring.com/#/anheuser-busch/" style="color: #231f20; text-decoration:none;">Anheuser-Busch,</a> deconstructing polygons for  <a href="http://www.scyldbowring.com/#/teletech/" style="color: #231f20; text-decoration:none;">Teletech,</a> unfolding building structures for <a href="http://www.scyldbowring.com/#/marleyeternit/" style="color: #231f20; text-decoration:none;">MarleyEternit,</a> shape forming LED lights for <a href="http://www.scyldbowring.com/#/schneider-electric/" style="color: #231f20; text-decoration:none;">Schneider Electric</a> plus much more. <br />
+                                        There's work for 2 newly launched brands: Amazon rival, Jet and joint venture Walgreens Boots Alliance. Concept work for Estée Lauder, and logo animations for Seaport Global. <br />
                                         <br />
-                                        Take a minute... to take a peek. <br />And let me know if I can help bring your brand to life.<br />
+                                        So please take a peek...  and let me know how I can help bring your brands to life.<br />
 
                                         <br />
                                         All the best, <br /> Scyld.<br/>
@@ -718,7 +737,7 @@
 
                                 <tr>
                                     <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                        <tweet><img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/socialicons/twitter_30.png"/></tweet>&nbsp;&nbsp;&nbsp;<fblike><img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/socialicons/fb_30.png"/></fblike>&nbsp;&nbsp;&nbsp;<forwardtoafriend><img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/socialicons/mail_30.png"/></forwardtoafriend>&nbsp;&nbsp;&nbsp;<a href="www.linkedin.com/pub/scyld-bowring/3/528/b"><img src="https://dl.dropboxusercontent.com/u/111446566/scyld/scyld%20newsletter/socialicons/linkedin_30.png"/></a>
+                                        <tweet><img src="img/socialicons/twitter_30.png"/></tweet>&nbsp;&nbsp;&nbsp;<fblike><img src="img/socialicons/fb_30.png"/></fblike>&nbsp;&nbsp;&nbsp;<forwardtoafriend><img src="img/socialicons/mail_30.png"/></forwardtoafriend>&nbsp;&nbsp;&nbsp;<a href="www.linkedin.com/pub/scyld-bowring/3/528/b"><img src="img/socialicons/linkedin_30.png"/></a>
                                     </td>
                                 </tr>
 
